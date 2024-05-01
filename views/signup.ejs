@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>singup</h1>
+    <form method="POST" action="http://localhost:3000/register">
+        <input type="text" name="name" placeholder="name"> <br><br>
+        <input type="email" name="email" placeholder="email"> <br><br>
+        <input type="password" name="password" placeholder="password"> <br><br>
+        <input type="submit" value="submit">
+        <%if(message){%>
+            <p><%= message %></p>
+            <% }%>
+    </form>
+    <hr>
+    <a href="/login">Login</a>
+</form>
+</body>
+</html>
